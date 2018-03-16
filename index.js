@@ -7,4 +7,4 @@ var bot = new TelegramBot(token, { polling: true });
 bot.getMe().then(function(me) {
   console.log("Hi my name is %s!", me.username);
 });
-app.listen(3000, () => console.log("Example app listening on port 3000!"));
+app.listen(process.env.PORT, () => console.log("Example app listening on port 3000!"));
